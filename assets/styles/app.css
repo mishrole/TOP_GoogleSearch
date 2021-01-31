@@ -149,6 +149,7 @@ svg.btn-grid path {
 
 #main {
     margin-top: 21px;
+    margin-bottom: 21px;
 }
 
 #search {
@@ -157,7 +158,9 @@ svg.btn-grid path {
 }
 
 .logo {
+    height: 186px;
     padding-top: 94px;
+    transition: height 0.4s ease-in-out, width 0.4s ease-in-out, padding-top 0.4s ease-in-out;
 }
 
 .google {
@@ -254,5 +257,19 @@ footer {
     .footer-links {
         flex-direction: column-reverse;
         align-items: center;
+    }
+}
+
+@media only screen and (max-height: 566px) {
+    .logo {
+        padding-top: 10px !important;
+        height: 72px;
+        width: auto;
+        /* transition: height 0.4s ease-in-out, width 0.4s ease-in-out, padding-top 0.4s ease-in-out; */
+    }
+
+    #main {
+        margin-top: 0;
+        padding-top: 0;
     }
 }
